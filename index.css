@@ -1,7 +1,42 @@
 body {
     background-color: darkgray;
+    height: 300vh;
 }
 
-i {
-    background-color: yellow;
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 80px;
+    background-color: red;
+    color: white;
+    margin: 4px;
+}
+
+#div2 {
+    transition: 200ms;
+    left: 0px;
+    bottom: 0px;
+}
+
+#div2:hover {
+    position:relative;
+    bottom: 10px;    
+}
+
+#div3 {
+    position: absolute;
+    top: 0px;
+    right: 400px;
+}
+
+#div4 {
+    position: fixed;
+    bottom: 0px;
+}
+
+#div5 {
+    position: sticky;
+    top: 20px;
 }
