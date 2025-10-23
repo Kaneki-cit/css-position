@@ -19,7 +19,7 @@ selector {
     position: absolute | relative | fixed | sticky | static;
 }
 ```
-- ```absolute``` allows you to position the element relative to its container (container must have ```position: relative``` or ```position: absolute``` set)
+- ```absolute``` allows you to position the element relative to its container (The container must have ```position: relative``` or ```position: absolute``` set or it will be relative to the body element)
 - ```relative``` allows you to position the element relative to where it normally would be
 - ```fixed``` is like absolute except the element will not scroll - the element stays in a *fixed* position
 - ```sticky``` allows you to specify the element to *stick* when the page is scrolled
@@ -34,4 +34,17 @@ To change the position of an element, you must also set ```top```, ```bottom```,
 
 ## Assignment
 1. Open ```assignment.html``` in your browser and ```assignment.css``` in your editor.
+2. Find the ```.header``` selector and use ```postion``` and ```top``` so that the header will be fixed to the top of the screen
+3. Find the ```.nav``` selector and use ```position```, ```top```, and ```right``` so the nav will be positioned on the right, halfway down, but still scroll up/down
+4. Find the ```.ad``` selector and use ```position``` and ```top``` so that the ad will stick underneath the header when scrolled up
 
+**Refer to the screenshots below to see how it should look**
+
+### Normal (not scrolled)
+![](assets/screenshot1.png)
+
+### Partially scrolled
+![](assets/screenshot2.png)
+
+### Scrolled all the way down
+![](assets/screenshot3.png)
