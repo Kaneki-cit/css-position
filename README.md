@@ -1,48 +1,37 @@
 # css-display
 
 ## Learning Target
-- I am learning how to use the CSS ```display: flex``` property to control how elements are positioned
+- I am learning how to use the CSS ```position``` property to control how elements are positioned
 
 ## Success Criteria
-- I can describe the difference in behavior between ```display: block``` and ```display: inline``` elements
-- I can set ```display: flex``` on a container element to create a flex container
-- I can use ```flex-direction```, ```justify-content```, and ```align-items``` to control how child elements are positioned
+- I can set ```position``` to ```absolute```, ```relative```, ```fixed```, and ```sticky```
+- I can identify the differences between ```static```, ```absolute```, ```relative```, ```fixed```, and ```sticky```
+- I can use ```top```, ```left```, ```bottom```, and ```right``` with ```position``` properties to position an element
 
 
 ## Directions
 1. Install Live Server and Go Live to view how the webpage looks with no styling
 2. Follow directions below
 
-## Flex Container Properties
+## CSS Position Property
 ```css
-container {
-    display: flex;
-    flex-direction: row | column;
-    justify-content: start | end | center | space-around | space-between | space-evenly;
-    align-items: start | end | center | stretch;
-    flex-wrap: wrap | nowrap;
+selector {
+    position: absolute | relative | fixed | sticky | static;
 }
 ```
+- ```absolute``` allows you to position the element relative to its container (container must have ```position: relative``` or ```position: absolute``` set)
+- ```relative``` allows you to position the element relative to where it normally would be
+- ```fixed``` is like absolute except the element will not scroll - the element stays in a *fixed* position
+- ```sticky``` allows you to specify the element to *stick* when the page is scrolled
+
+To change the position of an element, you must also set ```top```, ```bottom```, ```left``` or ```right```
+- ```top``` is how far from the top (```px```, ```%```, or any other CSS unit)
+- ```bottom``` is how far from the bottom
+- ```left``` is how far from the left
+- ```right``` is how far from the right
+
+**NOTE:** You *CAN* combine ```top``` and ```left```, ```top``` and ```right```, etc., but you *CANNOT* use both ```top``` and ```bottom``` or ```left``` and ```right```
 
 ## Assignment
 1. Open ```assignment.html``` in your browser and ```assignment.css``` in your editor.
-2. Set each container selector to have ```display: flex```
-3. Add flex properties to each container selector to style them to look like the images. **DO NOT CHANGE ANY OTHER CSS PROPERTIES**
 
-### Container 1
-![](assets/container1.png)
-
-### Container 2
-![](assets/container2.png)
-
-### Container 3
-![](assets/container3.png)
-
-### Container 4
-![](assets/container4.png)
-
-### Container 5
-![](assets/container5.png)
-
-### Container 6
-![](assets/container6.png)

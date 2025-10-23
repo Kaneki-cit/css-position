@@ -1,42 +1,47 @@
 body {
     background-color: darkgray;
-    height: 300vh;
+    height: 300vh; /* This sets the pages to be 3 times the height of the visible window so it will scroll */
 }
 
+/* This sets the size, font-color, and centers the text inside all the divs */
 div {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 200px;
     height: 80px;
-    background-color: red;
     color: white;
     margin: 4px;
 }
 
-#div2 {
-    transition: 200ms;
-    left: 0px;
-    bottom: 0px;
+/* Follow along below with my demonstration to test different position settings */
+
+#div1 {
+    background-color: red;
 }
 
-#div2:hover {
+#div2 {
+    background-color: blue;
     position:relative;
-    bottom: 10px;    
+    left: 100px;
+    bottom: 20px;
 }
 
 #div3 {
+    background-color: orange;
     position: absolute;
     top: 0px;
     right: 400px;
 }
 
 #div4 {
+    background-color: green;
     position: fixed;
     bottom: 0px;
 }
 
 #div5 {
+    background-color: purple;
     position: sticky;
     top: 20px;
 }
